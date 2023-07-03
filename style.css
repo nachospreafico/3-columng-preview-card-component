@@ -1,0 +1,297 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: BigShoulder;
+  src: url("./assets/fonts/BigShouldersDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: LexendDeca;
+  src: url("./assets/fonts/LexendDeca-VariableFont_wght.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+.card-title {
+  color: white;
+  font-family: BigShoulder;
+  font-size: 2.25rem;
+}
+
+.card-description {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: LexendDeca;
+  font-size: 15px;
+}
+
+#card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+#card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.learn-more {
+  background-color: white;
+  border-radius: 25px;
+  border: 0;
+  font-family: LexendDeca;
+  width: fit-content;
+}
+
+#card-1 .learn-more {
+  color: hsl(31, 77%, 52%);
+}
+
+#card-2 .learn-more {
+  color: hsl(184, 100%, 22%);
+}
+
+#card-3 .learn-more {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    padding: 12% 7% 12% 7%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 12%;
+  }
+
+  #card-1 {
+    border-radius: 10px 10px 0 0;
+  }
+
+  #card-3 {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .card-icon {
+    width: 20%;
+  }
+
+  .card-description {
+    line-height: 1.6;
+    margin-bottom: 10%;
+  }
+
+  .learn-more {
+    padding: 5% 10% 5% 10%;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    padding: 12% 7% 12% 7%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 12%;
+  }
+
+  #card-1 {
+    border-radius: 10px 10px 0 0;
+  }
+
+  #card-3 {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .card-icon {
+    width: 20%;
+  }
+
+  .card-description {
+    line-height: 1.6;
+    margin-bottom: 10%;
+  }
+
+  .learn-more {
+    padding: 5% 10% 5% 10%;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 7% 15% 7% 15%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 5%;
+    width: 100%;
+  }
+
+  #card-1 {
+    border-radius: 10px 0 0 10px;
+  }
+
+  #card-3 {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card-icon {
+    width: 20%;
+  }
+
+  .card-title {
+    margin: 8% 0 8% 0;
+  }
+
+  .card-description {
+    line-height: 1.6;
+    margin-bottom: 25%;
+    margin-top: 0;
+  }
+
+  .learn-more {
+    padding: 5% 10% 5% 10%;
+    font-weight: 700;
+    border: 2px white solid;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    padding: 7% 15% 7% 15%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 5%;
+  }
+
+  #card-1 {
+    border-radius: 10px 0 0 10px;
+  }
+
+  #card-3 {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card-icon {
+    width: 20%;
+  }
+
+  .card-title {
+    margin: 8% 0 8% 0;
+  }
+
+  .card-description {
+    line-height: 1.6;
+    margin-bottom: 25%;
+    margin-top: 0;
+  }
+
+  .learn-more {
+    padding: 5% 10% 5% 10%;
+    font-weight: 700;
+    border: 2px white solid;
+  }
+
+  #card-1 .learn-more:hover,
+  #card-2 .learn-more:hover,
+  #card-3 .learn-more:hover {
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    padding: 7% 15% 7% 15%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 5%;
+  }
+
+  #card-1 {
+    border-radius: 10px 0 0 10px;
+  }
+
+  #card-3 {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card-icon {
+    width: 20%;
+  }
+
+  .card-title {
+    margin: 8% 0 8% 0;
+  }
+
+  .card-description {
+    line-height: 1.6;
+    margin-bottom: 25%;
+    margin-top: 0;
+  }
+
+  .learn-more {
+    padding: 5% 10% 5% 10%;
+    font-weight: 700;
+    border: 2px white solid;
+  }
+
+  #card-1 .learn-more:hover,
+  #card-2 .learn-more:hover,
+  #card-3 .learn-more:hover {
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
